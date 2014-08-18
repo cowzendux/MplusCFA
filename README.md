@@ -5,7 +5,7 @@ SPSS Python Extension function that will use Mplus to run a confirmatory factor 
 This program allows users to identify a factor structure that they want to test on an SPSS data set. The program then converts the active data set to Mplus format, writes a program that will perform the CFA in Mplus, then loads the important parts of the Mplus output into the SPSS output window.
 
 ##Usage
-**Usage: MplusCFA(impfile, names, structure, corr, cluster)**
+**MplusCFA(impfile, names, structure, corr, cluster)**
 * "impfile" is a string identifying the directory and filename of Mplus input file to be created by the program. This filename must end with .inp . The data file will automatically be saved to the same directory. This argument is required.
 * "names" is a list containing the names that will be used by Mplus label your factors. These should be provided as strings. These names must follow the rules for variable names in Mplus. The order of the names in the list should correspond to the order of the structures identified in the factor structure list. This argument is required.
 * "structure" is actually a list of lists identifying your factor structure. First, you create a set of lists that each identify the items loading on a particular factor. Then you combine these individual factor lists  into a larger list identifying the entire factor structure. This argument is required.
