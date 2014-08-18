@@ -12,7 +12,7 @@ This program allows users to identify a factor structure that they want to test 
 * "corr" is an optional argument that can take on the values of "CORRELATED" or "UNCORRELATED". This specifies whether you want to allow the latent factors to be correlated.  This defaults to "CORRELATED".
 * "cluster" is an optional argument that identifies a cluster variable. This will be included using the Type = complex analysis command in Mplus. This defaults to None, which indicates that there is no clustering. 
 
-##Example 1
+##Example
 **MplusCFA(inpfile = "C:\users\jamie\workspace\spssmplus\CFA.inp",  
 names = ["CO", "ES", "IS"],  
 structure = [ ["CO1", "CO2", "CO3"], ["ES1", "ES2", "ES3", "ES4"], ["IS1", "IS2", "IS3"] ],  
